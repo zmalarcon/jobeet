@@ -1,0 +1,11 @@
+{
+    "name": "zully/jobeet",
+    "description": "Tutorial Symfony 1.4",
+    "authors": [
+        {
+            "name": "Zully Alarcon",
+            "email": "zullyalarcon@gmail.com"
+        }
+    ],
+    "require": {}
+}

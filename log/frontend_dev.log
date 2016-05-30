@@ -1,28 +1,761 @@
-May 28 23:46:45 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
-May 28 23:46:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-May 28 23:46:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-May 28 23:46:45 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
-May 28 23:46:45 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
-May 28 23:46:45 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
-May 28 23:46:45 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
-May 28 23:46:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-May 28 23:46:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-May 28 23:46:45 symfony [info] {sfWebDebugLogger} Configuration 172.55 ms (9)
-May 28 23:46:45 symfony [info] {sfWebDebugLogger} Factories 85.16 ms (1)
-May 28 23:46:45 symfony [info] {sfWebDebugLogger} Action "default/index" 0.09 ms (1)
-May 28 23:46:45 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 23.94 ms (1)
-May 28 23:46:45 symfony [info] {sfWebResponse} Send content (30569 o)
-May 28 23:48:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
-May 28 23:48:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-May 28 23:48:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-May 28 23:48:52 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
-May 28 23:48:52 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
-May 28 23:48:52 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
-May 28 23:48:52 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
-May 28 23:48:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-May 28 23:48:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-May 28 23:48:52 symfony [info] {sfWebDebugLogger} Configuration 10.77 ms (9)
-May 28 23:48:52 symfony [info] {sfWebDebugLogger} Factories 34.78 ms (1)
-May 28 23:48:52 symfony [info] {sfWebDebugLogger} Action "default/index" 0.07 ms (1)
-May 28 23:48:52 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 15.13 ms (1)
-May 28 23:48:52 symfony [info] {sfWebResponse} Send content (30343 o)
+May 29 02:54:52 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 02:54:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 02:54:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 02:54:53 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 02:54:54 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 02:54:54 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 02:54:54 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 02:54:54 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:54:54 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:54:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 02:54:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 02:54:54 symfony [info] {sfWebDebugLogger} Configuration 344.82 ms (10)
+May 29 02:54:54 symfony [info] {sfWebDebugLogger} Factories 1515.36 ms (1)
+May 29 02:54:54 symfony [info] {sfWebDebugLogger} Action "job/index" 261.07 ms (1)
+May 29 02:54:54 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 484.24 ms (1)
+May 29 02:54:54 symfony [info] {sfWebResponse} Send content (34037 o)
+May 29 02:55:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',)
+May 29 02:55:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 02:55:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 02:55:09 symfony [info] {jobActions} Call "jobActions->executeNew()"
+May 29 02:55:09 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/newSuccess.php"
+May 29 02:55:09 symfony [info] {sfPartialView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/_form.php"
+May 29 02:55:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 02:55:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SELECT jobeet_category.ID, jobeet_category.NAME FROM `jobeet_category`
+May 29 02:55:09 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:55:09 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:55:09 symfony [err] {RuntimeException} Class "JobeetCategory" must implement a "__toString" method to be rendered in a "sfWidgetFormPropelChoice" widget
+May 29 02:55:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 29 02:55:09 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 02:55:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 02:55:09 symfony [info] {sfWebDebugLogger} Configuration 10.30 ms (9)
+May 29 02:55:09 symfony [info] {sfWebDebugLogger} Factories 32.43 ms (1)
+May 29 02:55:09 symfony [info] {sfWebDebugLogger} Action "job/new" 24.91 ms (1)
+May 29 02:55:09 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 287.02 ms (1)
+May 29 02:55:09 symfony [info] {sfWebDebugLogger} Partial "job/_form" 197.80 ms (1)
+May 29 02:57:06 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/new with parameters array (  'module' => 'job',  'action' => 'new',)
+May 29 02:57:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 02:57:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 02:57:06 symfony [info] {jobActions} Call "jobActions->executeNew()"
+May 29 02:57:06 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/newSuccess.php"
+May 29 02:57:06 symfony [info] {sfPartialView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/_form.php"
+May 29 02:57:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 02:57:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SELECT jobeet_category.ID, jobeet_category.NAME FROM `jobeet_category`
+May 29 02:57:06 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:57:06 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:57:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 02:57:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 02:57:06 symfony [info] {sfWebDebugLogger} Configuration 8.59 ms (9)
+May 29 02:57:06 symfony [info] {sfWebDebugLogger} Factories 24.42 ms (1)
+May 29 02:57:06 symfony [info] {sfWebDebugLogger} Action "job/new" 20.28 ms (1)
+May 29 02:57:06 symfony [info] {sfWebDebugLogger} View "Success" for "job/new" 105.75 ms (1)
+May 29 02:57:06 symfony [info] {sfWebDebugLogger} Partial "job/_form" 93.64 ms (1)
+May 29 02:57:06 symfony [info] {sfWebResponse} Send content (58348 o)
+May 29 02:57:20 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 02:57:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 02:57:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 02:57:20 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 02:57:20 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 02:57:20 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 02:57:20 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 02:57:20 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:57:20 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:57:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 02:57:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 02:57:20 symfony [info] {sfWebDebugLogger} Configuration 10.48 ms (9)
+May 29 02:57:20 symfony [info] {sfWebDebugLogger} Factories 25.31 ms (1)
+May 29 02:57:20 symfony [info] {sfWebDebugLogger} Action "job/index" 17.75 ms (1)
+May 29 02:57:20 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 13.36 ms (1)
+May 29 02:57:20 symfony [info] {sfWebResponse} Send content (34305 o)
+May 29 02:57:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/show/id/1 with parameters array (  'module' => 'job',  'action' => 'show',  'id' => '1',)
+May 29 02:57:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 02:57:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 02:57:26 symfony [info] {jobActions} Call "jobActions->executeShow()"
+May 29 02:57:26 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 02:57:26 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='1'
+May 29 02:57:26 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+May 29 02:57:26 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:57:26 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:57:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 02:57:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 02:57:26 symfony [info] {sfWebDebugLogger} Configuration 10.74 ms (9)
+May 29 02:57:26 symfony [info] {sfWebDebugLogger} Factories 23.65 ms (1)
+May 29 02:57:26 symfony [info] {sfWebDebugLogger} Action "job/show" 15.30 ms (1)
+May 29 02:57:26 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 11.90 ms (1)
+May 29 02:57:26 symfony [info] {sfWebResponse} Send content (33839 o)
+May 29 02:57:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/edit/id/1 with parameters array (  'module' => 'job',  'action' => 'edit',  'id' => '1',)
+May 29 02:57:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 02:57:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 02:57:29 symfony [info] {jobActions} Call "jobActions->executeEdit()"
+May 29 02:57:29 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 02:57:29 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='1'
+May 29 02:57:29 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/editSuccess.php"
+May 29 02:57:29 symfony [info] {sfPartialView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/_form.php"
+May 29 02:57:29 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SELECT jobeet_category.ID, jobeet_category.NAME FROM `jobeet_category`
+May 29 02:57:29 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:57:29 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 02:57:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 02:57:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 02:57:29 symfony [info] {sfWebDebugLogger} Configuration 10.30 ms (9)
+May 29 02:57:29 symfony [info] {sfWebDebugLogger} Factories 22.97 ms (1)
+May 29 02:57:29 symfony [info] {sfWebDebugLogger} Action "job/edit" 27.01 ms (1)
+May 29 02:57:29 symfony [info] {sfWebDebugLogger} View "Success" for "job/edit" 33.89 ms (1)
+May 29 02:57:29 symfony [info] {sfWebDebugLogger} Partial "job/_form" 22.19 ms (1)
+May 29 02:57:29 symfony [info] {sfWebResponse} Send content (61373 o)
+May 29 03:59:49 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 03:59:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 03:59:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 03:59:50 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 03:59:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 03:59:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 03:59:51 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 03:59:51 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 03:59:51 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 03:59:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 03:59:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 03:59:51 symfony [info] {sfWebDebugLogger} Configuration 12.97 ms (9)
+May 29 03:59:51 symfony [info] {sfWebDebugLogger} Factories 994.01 ms (1)
+May 29 03:59:51 symfony [info] {sfWebDebugLogger} Action "job/index" 716.62 ms (1)
+May 29 03:59:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 395.32 ms (1)
+May 29 03:59:52 symfony [info] {sfWebResponse} Send content (34006 o)
+May 29 04:22:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/edit/id/1 with parameters array (  'module' => 'job',  'action' => 'edit',  'id' => '1',)
+May 29 04:22:08 symfony [info] {myUser} Automatic user logout due to timeout
+May 29 04:22:08 symfony [info] {myUser} User is not authenticated
+May 29 04:22:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 04:22:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 04:22:08 symfony [info] {jobActions} Call "jobActions->executeEdit()"
+May 29 04:22:08 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 04:22:08 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='1'
+May 29 04:22:09 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/editSuccess.php"
+May 29 04:22:09 symfony [info] {sfPartialView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/_form.php"
+May 29 04:22:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.3 MB | mempeak:    5.3 MB | memdelta:      0.0 B | SELECT jobeet_category.ID, jobeet_category.NAME FROM `jobeet_category`
+May 29 04:22:09 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 04:22:09 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 04:22:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 04:22:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 04:22:09 symfony [info] {sfWebDebugLogger} Configuration 12.37 ms (9)
+May 29 04:22:09 symfony [info] {sfWebDebugLogger} Factories 29.87 ms (1)
+May 29 04:22:09 symfony [info] {sfWebDebugLogger} Action "job/edit" 811.08 ms (1)
+May 29 04:22:09 symfony [info] {sfWebDebugLogger} View "Success" for "job/edit" 445.61 ms (1)
+May 29 04:22:09 symfony [info] {sfWebDebugLogger} Partial "job/_form" 382.84 ms (1)
+May 29 04:22:09 symfony [info] {sfWebResponse} Send content (71890 o)
+May 29 04:22:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/edit/id/images/logo.png with parameters array (  'module' => 'job',  'action' => 'edit',  'id' => 'images',  'logo.png' => true,)
+May 29 04:22:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 04:22:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 04:22:09 symfony [info] {jobActions} Call "jobActions->executeEdit()"
+May 29 04:22:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 04:22:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='images'
+May 29 04:22:10 symfony [err] {sfError404Exception} Object JobeetJob does not exist (images).
+May 29 04:22:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 04:22:10 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 04:22:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 04:22:10 symfony [info] {sfWebDebugLogger} Configuration 11.66 ms (8)
+May 29 04:22:10 symfony [info] {sfWebDebugLogger} Factories 37.20 ms (1)
+May 29 04:22:10 symfony [info] {sfWebDebugLogger} Action "job/edit" 418.81 ms (1)
+May 29 04:22:15 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/job/" (/).
+May 29 04:22:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 04:22:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 04:22:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 04:22:15 symfony [info] {sfWebDebugLogger} Configuration 6.58 ms (5)
+May 29 04:22:15 symfony [info] {sfWebDebugLogger} Factories 30.63 ms (1)
+May 29 04:22:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 04:22:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 04:22:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 04:22:23 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 04:22:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 04:22:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 04:22:23 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 04:22:23 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 04:22:23 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 04:22:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 04:22:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 04:22:23 symfony [info] {sfWebDebugLogger} Configuration 11.90 ms (9)
+May 29 04:22:23 symfony [info] {sfWebDebugLogger} Factories 24.34 ms (1)
+May 29 04:22:23 symfony [info] {sfWebDebugLogger} Action "job/index" 18.23 ms (1)
+May 29 04:22:23 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 15.62 ms (1)
+May 29 04:22:23 symfony [info] {sfWebResponse} Send content (44002 o)
+May 29 04:22:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 04:22:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 04:22:23 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 04:22:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 04:22:23 symfony [info] {sfWebDebugLogger} Configuration 6.54 ms (5)
+May 29 04:22:23 symfony [info] {sfWebDebugLogger} Factories 30.00 ms (1)
+May 29 04:23:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 04:23:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 04:23:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 04:23:55 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 04:23:55 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 04:23:55 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 04:23:55 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 04:23:55 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 04:23:55 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 04:23:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 04:23:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 04:23:55 symfony [info] {sfWebDebugLogger} Configuration 10.22 ms (9)
+May 29 04:23:55 symfony [info] {sfWebDebugLogger} Factories 24.34 ms (1)
+May 29 04:23:55 symfony [info] {sfWebDebugLogger} Action "job/index" 14.86 ms (1)
+May 29 04:23:55 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 11.74 ms (1)
+May 29 04:23:55 symfony [info] {sfWebResponse} Send content (44033 o)
+May 29 04:23:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 04:23:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 04:23:55 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 04:23:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 04:23:55 symfony [info] {sfWebDebugLogger} Configuration 9.44 ms (5)
+May 29 04:23:55 symfony [info] {sfWebDebugLogger} Factories 39.85 ms (1)
+May 29 19:46:20 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 19:46:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 19:46:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 19:46:20 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 19:46:20 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 19:46:20 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 19:46:20 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 19:46:20 symfony [notice] {sfWebDebugLogger}  Notice at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 7 (Undefined variable: job)
+May 29 19:54:54 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 19:54:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 19:54:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 19:54:54 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 19:54:54 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 19:54:54 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 19:54:54 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 19:54:54 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 19:54:54 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 19:54:54 symfony [info] {main} Get slot "title"
+May 29 19:54:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 19:54:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 19:54:54 symfony [info] {sfWebDebugLogger} Configuration 79.16 ms (10)
+May 29 19:54:54 symfony [info] {sfWebDebugLogger} Factories 93.84 ms (1)
+May 29 19:54:54 symfony [info] {sfWebDebugLogger} Action "job/index" 15.91 ms (1)
+May 29 19:54:54 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 12.69 ms (1)
+May 29 19:54:54 symfony [info] {sfWebResponse} Send content (42933 o)
+May 29 19:54:54 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 19:54:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 19:54:54 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 19:54:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 19:54:54 symfony [info] {sfWebDebugLogger} Configuration 5.76 ms (5)
+May 29 19:54:54 symfony [info] {sfWebDebugLogger} Factories 21.89 ms (1)
+May 29 19:55:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/Sensio+Labs/Paris,+France/1/Web+Developer with parameters array (  'module' => 'job',  'action' => 'Sensio Labs',  'Paris,+France' => '1',  'Web+Developer' => true,)
+May 29 19:55:05 symfony [info] {sfFrontWebController} Action "job/SensioLabs" does not exist
+May 29 19:55:05 symfony [err] {sfError404Exception} Action "job/SensioLabs" does not exist.
+May 29 19:55:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 19:55:05 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 19:55:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 19:55:05 symfony [info] {sfWebDebugLogger} Configuration 4.19 ms (5)
+May 29 19:55:05 symfony [info] {sfWebDebugLogger} Factories 23.66 ms (1)
+May 29 20:11:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/Sensio+Labs/Paris,+France/1/Web+Developer with parameters array (  'module' => 'job',  'action' => 'Sensio Labs',  'Paris,+France' => '1',  'Web+Developer' => true,)
+May 29 20:11:54 symfony [info] {sfFrontWebController} Action "job/SensioLabs" does not exist
+May 29 20:11:54 symfony [err] {sfError404Exception} Action "job/SensioLabs" does not exist.
+May 29 20:11:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:11:54 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:11:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:11:54 symfony [info] {sfWebDebugLogger} Configuration 163.00 ms (5)
+May 29 20:11:54 symfony [info] {sfWebDebugLogger} Factories 99.37 ms (1)
+May 29 20:11:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 20:11:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:11:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:11:56 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 20:11:56 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:11:56 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 20:11:56 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 20:11:56 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:11:56 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:11:56 symfony [info] {main} Get slot "title"
+May 29 20:11:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 20:11:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:11:56 symfony [info] {sfWebDebugLogger} Configuration 64.53 ms (10)
+May 29 20:11:56 symfony [info] {sfWebDebugLogger} Factories 22.52 ms (1)
+May 29 20:11:56 symfony [info] {sfWebDebugLogger} Action "job/index" 17.53 ms (1)
+May 29 20:11:56 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 28.83 ms (1)
+May 29 20:11:56 symfony [info] {sfWebResponse} Send content (45629 o)
+May 29 20:11:56 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 20:11:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:11:56 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:11:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:11:56 symfony [info] {sfWebDebugLogger} Configuration 6.58 ms (5)
+May 29 20:11:56 symfony [info] {sfWebDebugLogger} Factories 29.10 ms (1)
+May 29 20:12:00 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 20:12:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:12:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:12:00 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 20:12:00 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:12:00 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 20:12:00 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 20:12:00 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:12:00 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:12:00 symfony [info] {main} Get slot "title"
+May 29 20:12:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 20:12:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:12:00 symfony [info] {sfWebDebugLogger} Configuration 10.62 ms (9)
+May 29 20:12:00 symfony [info] {sfWebDebugLogger} Factories 25.87 ms (1)
+May 29 20:12:00 symfony [info] {sfWebDebugLogger} Action "job/index" 18.70 ms (1)
+May 29 20:12:00 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 12.14 ms (1)
+May 29 20:12:00 symfony [info] {sfWebResponse} Send content (45659 o)
+May 29 20:12:00 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 20:12:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:12:00 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:12:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:12:00 symfony [info] {sfWebDebugLogger} Configuration 7.03 ms (5)
+May 29 20:12:00 symfony [info] {sfWebDebugLogger} Factories 31.42 ms (1)
+May 29 20:13:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:13:47 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:13:47 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:13:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:13:47 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:13:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:13:47 symfony [info] {sfWebDebugLogger} Configuration 5.11 ms (5)
+May 29 20:13:47 symfony [info] {sfWebDebugLogger} Factories 25.00 ms (1)
+May 29 20:18:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:18:22 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:18:22 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:18:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:18:22 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 414 (preg_replace_callback(): Modifier /e cannot be used with replacement callback)
+May 29 20:18:22 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:414))
+May 29 20:18:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:18:22 symfony [info] {sfWebDebugLogger} Configuration 4.77 ms (5)
+May 29 20:18:22 symfony [info] {sfWebDebugLogger} Factories 23.57 ms (1)
+May 29 20:18:22 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 414 (preg_replace_callback(): Modifier /e cannot be used with replacement callback)
+May 29 20:20:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:20:00 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:20:00 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:20:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:20:00 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 415 (preg_replace_callback(): Modifier /e cannot be used with replacement callback)
+May 29 20:20:00 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:415))
+May 29 20:20:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:20:00 symfony [info] {sfWebDebugLogger} Configuration 5.32 ms (5)
+May 29 20:20:00 symfony [info] {sfWebDebugLogger} Factories 23.69 ms (1)
+May 29 20:20:00 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 415 (preg_replace_callback(): Modifier /e cannot be used with replacement callback)
+May 29 20:21:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:21:15 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:21:15 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:21:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:21:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 409 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+May 29 20:21:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:21:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:21:15 symfony [info] {sfWebDebugLogger} Configuration 5.15 ms (5)
+May 29 20:21:15 symfony [info] {sfWebDebugLogger} Factories 25.32 ms (1)
+May 29 20:21:15 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 409 (preg_replace_callback(): Requires argument 2, ''-'.strtoupper('\1')', to be a valid callback)
+May 29 20:21:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:21:46 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:21:46 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:21:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:21:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 409 (preg_replace_callback(): Requires argument 2, '-\1', to be a valid callback)
+May 29 20:21:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:21:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:21:46 symfony [info] {sfWebDebugLogger} Configuration 4.69 ms (5)
+May 29 20:21:46 symfony [info] {sfWebDebugLogger} Factories 23.83 ms (1)
+May 29 20:21:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 409 (preg_replace_callback(): Requires argument 2, '-\1', to be a valid callback)
+May 29 20:22:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:22:30 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:22:30 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:22:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:22:30 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 409 (preg_replace_callback(): Requires argument 2, '--\1', to be a valid callback)
+May 29 20:22:30 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:22:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:22:30 symfony [info] {sfWebDebugLogger} Configuration 4.97 ms (5)
+May 29 20:22:30 symfony [info] {sfWebDebugLogger} Factories 25.17 ms (1)
+May 29 20:22:30 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 409 (preg_replace_callback(): Requires argument 2, '--\1', to be a valid callback)
+May 29 20:23:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:23:21 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:23:21 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:23:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:23:21 symfony [notice] {sfWebDebugLogger}  Notice at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php(409) : regexp code on line 1 (Use of undefined constant t - assumed 't')
+May 29 20:23:21 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:23:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:23:21 symfony [info] {sfWebDebugLogger} Configuration 5.77 ms (5)
+May 29 20:23:21 symfony [info] {sfWebDebugLogger} Factories 24.47 ms (1)
+May 29 20:23:21 symfony [notice] {sfWebDebugLogger}  Notice at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php(409) : regexp code on line 1 (Use of undefined constant t - assumed 't')
+May 29 20:24:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:24:07 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:24:07 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:24:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:24:07 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:24:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:24:07 symfony [info] {sfWebDebugLogger} Configuration 5.22 ms (5)
+May 29 20:24:07 symfony [info] {sfWebDebugLogger} Factories 24.77 ms (1)
+May 29 20:24:24 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/job/" (/).
+May 29 20:24:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:24:24 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:24:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:24:24 symfony [info] {sfWebDebugLogger} Configuration 5.74 ms (5)
+May 29 20:24:24 symfony [info] {sfWebDebugLogger} Factories 26.28 ms (1)
+May 29 20:24:29 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 20:24:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:24:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:24:29 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 20:24:29 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:24:29 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 20:24:29 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 20:24:29 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:24:29 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:24:29 symfony [info] {main} Get slot "title"
+May 29 20:24:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 20:24:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:24:29 symfony [info] {sfWebDebugLogger} Configuration 9.10 ms (9)
+May 29 20:24:29 symfony [info] {sfWebDebugLogger} Factories 26.55 ms (1)
+May 29 20:24:29 symfony [info] {sfWebDebugLogger} Action "job/index" 16.87 ms (1)
+May 29 20:24:29 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 14.78 ms (1)
+May 29 20:24:29 symfony [info] {sfWebResponse} Send content (45625 o)
+May 29 20:24:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 20:24:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:24:29 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\response\sfWebResponse.class.php:409))
+May 29 20:24:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:24:29 symfony [info] {sfWebDebugLogger} Configuration 6.80 ms (5)
+May 29 20:24:29 symfony [info] {sfWebDebugLogger} Factories 35.34 ms (1)
+May 29 20:26:29 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 20:26:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:26:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:26:29 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 20:26:29 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:26:29 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 20:26:29 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 20:26:29 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:26:29 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:26:29 symfony [info] {main} Get slot "title"
+May 29 20:26:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 20:26:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:26:29 symfony [info] {sfWebDebugLogger} Configuration 8.26 ms (9)
+May 29 20:26:29 symfony [info] {sfWebDebugLogger} Factories 22.43 ms (1)
+May 29 20:26:29 symfony [info] {sfWebDebugLogger} Action "job/index" 14.81 ms (1)
+May 29 20:26:29 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 15.25 ms (1)
+May 29 20:26:29 symfony [info] {sfWebResponse} Send content (45656 o)
+May 29 20:26:29 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 20:26:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:26:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:26:29 symfony [info] {sfWebDebugLogger} Configuration 6.15 ms (5)
+May 29 20:26:29 symfony [info] {sfWebDebugLogger} Factories 28.66 ms (1)
+May 29 20:27:34 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 20:27:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:27:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:27:34 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 20:27:34 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:27:34 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 20:27:34 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 20:27:34 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\util\sfToolkit.class.php on line 372 (preg_replace_callback(): Modifier /e cannot be used with replacement callback)
+May 29 20:27:34 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\util\sfToolkit.class.php on line 372 (preg_replace_callback(): Modifier /e cannot be used with replacement callback)
+May 29 20:27:34 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\escaper\sfOutputEscaperGetterDecorator.class.php on line 45 (Missing argument 1 for sfOutputEscaperGetterDecorator::get(), called in C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\plugins\sfPropelPlugin\lib\routing\sfPropelRoute.class.php on line 112 and defined)
+May 29 20:27:34 symfony [notice] {sfWebDebugLogger}  Notice at C:\Users\Zully\www\symfony\jobeet\lib\vendor\symfony\lib\escaper\sfOutputEscaperGetterDecorator.class.php on line 52 (Undefined variable: key)
+May 29 20:27:34 symfony [err] {sfException} Call to undefined method BaseJobeetJob::get
+May 29 20:27:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+May 29 20:27:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:27:34 symfony [info] {sfWebDebugLogger} Configuration 164.52 ms (9)
+May 29 20:27:34 symfony [info] {sfWebDebugLogger} Factories 72.97 ms (1)
+May 29 20:27:34 symfony [info] {sfWebDebugLogger} Action "job/index" 14.43 ms (1)
+May 29 20:27:34 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 60.28 ms (1)
+May 29 20:29:28 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 20:29:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:29:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:29:28 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 20:29:28 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:29:28 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 20:29:28 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 20:29:28 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:29:28 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:29:28 symfony [info] {main} Get slot "title"
+May 29 20:29:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 20:29:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:29:28 symfony [info] {sfWebDebugLogger} Configuration 8.43 ms (9)
+May 29 20:29:28 symfony [info] {sfWebDebugLogger} Factories 24.29 ms (1)
+May 29 20:29:28 symfony [info] {sfWebDebugLogger} Action "job/index" 14.69 ms (1)
+May 29 20:29:28 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 11.74 ms (1)
+May 29 20:29:28 symfony [info] {sfWebResponse} Send content (42957 o)
+May 29 20:29:28 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 20:29:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:29:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:29:28 symfony [info] {sfWebDebugLogger} Configuration 6.14 ms (5)
+May 29 20:29:28 symfony [info] {sfWebDebugLogger} Factories 34.65 ms (1)
+May 29 20:29:36 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:29:36 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:29:36 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:29:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:29:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:29:36 symfony [info] {sfWebDebugLogger} Configuration 4.31 ms (5)
+May 29 20:29:36 symfony [info] {sfWebDebugLogger} Factories 24.78 ms (1)
+May 29 20:31:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:31:21 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:31:21 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:31:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:31:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:31:21 symfony [info] {sfWebDebugLogger} Configuration 4.64 ms (5)
+May 29 20:31:21 symfony [info] {sfWebDebugLogger} Factories 23.39 ms (1)
+May 29 20:31:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:31:24 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:31:24 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:31:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:31:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:31:24 symfony [info] {sfWebDebugLogger} Configuration 4.43 ms (5)
+May 29 20:31:24 symfony [info] {sfWebDebugLogger} Factories 24.18 ms (1)
+May 29 20:32:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:32:32 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:32:32 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:32:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:32:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:32:32 symfony [info] {sfWebDebugLogger} Configuration 5.06 ms (5)
+May 29 20:32:32 symfony [info] {sfWebDebugLogger} Factories 23.60 ms (1)
+May 29 20:44:43 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 20:44:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:44:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:44:44 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 20:44:44 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:44:44 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 20:44:44 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 20:44:44 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:44:44 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:44:44 symfony [info] {main} Get slot "title"
+May 29 20:44:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 20:44:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:44:44 symfony [info] {sfWebDebugLogger} Configuration 10.12 ms (9)
+May 29 20:44:44 symfony [info] {sfWebDebugLogger} Factories 27.32 ms (1)
+May 29 20:44:44 symfony [info] {sfWebDebugLogger} Action "job/index" 16.62 ms (1)
+May 29 20:44:44 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 13.18 ms (1)
+May 29 20:44:44 symfony [info] {sfWebResponse} Send content (42927 o)
+May 29 20:44:44 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 20:44:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:44:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:44:44 symfony [info] {sfWebDebugLogger} Configuration 7.71 ms (5)
+May 29 20:44:44 symfony [info] {sfWebDebugLogger} Factories 40.41 ms (1)
+May 29 20:44:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /job with parameters array (  'module' => 'job',  'action' => 'index',)
+May 29 20:44:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:44:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:44:46 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 20:44:46 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:44:46 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 20:44:46 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 20:44:46 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:44:46 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:44:46 symfony [info] {main} Get slot "title"
+May 29 20:44:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 20:44:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:44:46 symfony [info] {sfWebDebugLogger} Configuration 9.56 ms (9)
+May 29 20:44:46 symfony [info] {sfWebDebugLogger} Factories 23.91 ms (1)
+May 29 20:44:46 symfony [info] {sfWebDebugLogger} Action "job/index" 16.11 ms (1)
+May 29 20:44:46 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 9.86 ms (1)
+May 29 20:44:46 symfony [info] {sfWebResponse} Send content (42957 o)
+May 29 20:44:46 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 20:44:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:44:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:44:46 symfony [info] {sfWebDebugLogger} Configuration 7.44 ms (5)
+May 29 20:44:46 symfony [info] {sfWebDebugLogger} Factories 39.68 ms (1)
+May 29 20:44:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'web-developer' => true,)
+May 29 20:44:51 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:44:51 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:44:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:44:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:44:51 symfony [info] {sfWebDebugLogger} Configuration 5.14 ms (5)
+May 29 20:44:51 symfony [info] {sfWebDebugLogger} Factories 24.75 ms (1)
+May 29 20:51:49 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+May 29 20:51:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:51:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:51:49 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 20:51:49 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:51:49 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 20:51:49 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 20:51:49 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:51:49 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:51:49 symfony [info] {main} Get slot "title"
+May 29 20:51:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 20:51:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:51:49 symfony [info] {sfWebDebugLogger} Configuration 286.53 ms (9)
+May 29 20:51:49 symfony [info] {sfWebDebugLogger} Factories 164.70 ms (1)
+May 29 20:51:49 symfony [info] {sfWebDebugLogger} Action "job/index" 18.77 ms (1)
+May 29 20:51:49 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 26.01 ms (1)
+May 29 20:51:49 symfony [info] {sfWebResponse} Send content (42996 o)
+May 29 20:51:49 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 20:51:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:51:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:51:49 symfony [info] {sfWebDebugLogger} Configuration 6.50 ms (5)
+May 29 20:51:49 symfony [info] {sfWebDebugLogger} Factories 31.53 ms (1)
+May 29 20:51:52 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+May 29 20:51:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:51:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:51:52 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 29 20:51:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:51:52 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job`
+May 29 20:51:52 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 29 20:51:52 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:51:52 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:51:52 symfony [info] {main} Get slot "title"
+May 29 20:51:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 20:51:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:51:52 symfony [info] {sfWebDebugLogger} Configuration 9.40 ms (9)
+May 29 20:51:52 symfony [info] {sfWebDebugLogger} Factories 25.52 ms (1)
+May 29 20:51:52 symfony [info] {sfWebDebugLogger} Action "job/index" 17.29 ms (1)
+May 29 20:51:52 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 9.93 ms (1)
+May 29 20:51:52 symfony [info] {sfWebResponse} Send content (43025 o)
+May 29 20:51:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 29 20:51:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:51:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:51:52 symfony [info] {sfWebDebugLogger} Configuration 8.38 ms (5)
+May 29 20:51:52 symfony [info] {sfWebDebugLogger} Factories 41.00 ms (1)
+May 29 20:51:57 symfony [info] {sfPatternRouting} Match route "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug) for /job/sensio-labs/paris-france/1/web-developer with parameters array (  'module' => 'job',  'action' => 'show',  'company_slug' => 'sensio-labs',  'location_slug' => 'paris-france',  'id' => '1',  'position_slug' => 'web-developer',)
+May 29 20:51:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:51:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:51:57 symfony [info] {jobActions} Call "jobActions->executeShow()"
+May 29 20:51:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 29 20:51:57 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='1' LIMIT 1
+May 29 20:51:57 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+May 29 20:51:57 symfony [info] {main} Set slot "title"
+May 29 20:51:57 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:51:57 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 29 20:51:57 symfony [info] {main} Get slot "title"
+May 29 20:51:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 29 20:51:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:51:57 symfony [info] {sfWebDebugLogger} Configuration 11.49 ms (9)
+May 29 20:51:57 symfony [info] {sfWebDebugLogger} Factories 28.55 ms (1)
+May 29 20:51:57 symfony [info] {sfWebDebugLogger} Action "job/show" 18.48 ms (1)
+May 29 20:51:57 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 9.66 ms (1)
+May 29 20:51:57 symfony [info] {sfWebResponse} Send content (45039 o)
+May 29 20:51:57 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /job/sensio-labs/paris-france/1/images/logo.png with parameters array (  'module' => 'job',  'action' => 'sensio-labs',  'paris-france' => '1',  'images' => 'logo.png',)
+May 29 20:51:57 symfony [info] {sfFrontWebController} Action "job/sensiolabs" does not exist
+May 29 20:51:57 symfony [err] {sfError404Exception} Action "job/sensiolabs" does not exist.
+May 29 20:51:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 29 20:51:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:51:57 symfony [info] {sfWebDebugLogger} Configuration 6.90 ms (5)
+May 29 20:51:57 symfony [info] {sfWebDebugLogger} Factories 37.72 ms (1)
+May 30 02:29:30 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+May 30 02:29:30 symfony [info] {myUser} Automatic user logout due to timeout
+May 30 02:29:30 symfony [info] {myUser} User is not authenticated
+May 30 02:29:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 02:29:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 02:29:30 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 02:29:30 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 30 02:29:30 symfony [debug] {sfPropelLogger} time:  0.170 sec | slow: YES | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2016-05-30 02:29:30'
+May 30 02:29:30 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 30 02:29:30 symfony [notice] {sfWebDebugLogger}  Notice at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 5 (Undefined variable: JobeetJobs)
+May 30 02:29:30 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 5 (Invalid argument supplied for foreach())
+May 30 02:29:30 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:29:30 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:29:30 symfony [info] {main} Get slot "title"
+May 30 02:29:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 02:29:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:29:30 symfony [info] {sfWebDebugLogger} Configuration 243.35 ms (9)
+May 30 02:29:30 symfony [info] {sfWebDebugLogger} Factories 83.22 ms (1)
+May 30 02:29:30 symfony [info] {sfWebDebugLogger} Action "job/index" 186.85 ms (1)
+May 30 02:29:30 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 26.98 ms (1)
+May 30 02:29:30 symfony [info] {sfWebResponse} Send content (43879 o)
+May 30 02:29:30 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 30 02:29:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 30 02:29:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:29:30 symfony [info] {sfWebDebugLogger} Configuration 8.33 ms (5)
+May 30 02:29:30 symfony [info] {sfWebDebugLogger} Factories 41.21 ms (1)
+May 30 02:33:44 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+May 30 02:33:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 02:33:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 02:33:45 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 02:33:45 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 30 02:33:45 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2016-05-30 02:33:45'
+May 30 02:33:46 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 30 02:33:46 symfony [notice] {sfWebDebugLogger}  Notice at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 5 (Undefined variable: JobeetJobs)
+May 30 02:33:46 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 5 (Invalid argument supplied for foreach())
+May 30 02:33:46 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:33:46 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:33:46 symfony [info] {main} Get slot "title"
+May 30 02:33:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 02:33:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:33:46 symfony [info] {sfWebDebugLogger} Configuration 325.39 ms (10)
+May 30 02:33:46 symfony [info] {sfWebDebugLogger} Factories 881.38 ms (1)
+May 30 02:33:46 symfony [info] {sfWebDebugLogger} Action "job/index" 422.95 ms (1)
+May 30 02:33:46 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 262.76 ms (1)
+May 30 02:33:46 symfony [info] {sfWebResponse} Send content (43197 o)
+May 30 02:33:46 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 30 02:33:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 30 02:33:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:33:46 symfony [info] {sfWebDebugLogger} Configuration 4.14 ms (5)
+May 30 02:33:46 symfony [info] {sfWebDebugLogger} Factories 31.53 ms (1)
+May 30 02:33:46 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 30 02:33:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 30 02:33:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:33:46 symfony [info] {sfWebDebugLogger} Configuration 4.48 ms (5)
+May 30 02:33:46 symfony [info] {sfWebDebugLogger} Factories 33.04 ms (1)
+May 30 02:35:17 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+May 30 02:35:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 02:35:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 02:35:17 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 02:35:17 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 30 02:35:17 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2016-05-30 02:35:17'
+May 30 02:35:17 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 30 02:35:17 symfony [notice] {sfWebDebugLogger}  Notice at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 5 (Undefined variable: JobeetJobs)
+May 30 02:35:17 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 5 (Invalid argument supplied for foreach())
+May 30 02:35:17 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:35:17 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:35:17 symfony [info] {main} Get slot "title"
+May 30 02:35:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 02:35:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:35:17 symfony [info] {sfWebDebugLogger} Configuration 236.60 ms (9)
+May 30 02:35:17 symfony [info] {sfWebDebugLogger} Factories 118.74 ms (1)
+May 30 02:35:17 symfony [info] {sfWebDebugLogger} Action "job/index" 16.55 ms (1)
+May 30 02:35:17 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 29.44 ms (1)
+May 30 02:35:17 symfony [info] {sfWebResponse} Send content (43215 o)
+May 30 02:35:17 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 30 02:35:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 30 02:35:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:35:17 symfony [info] {sfWebDebugLogger} Configuration 6.84 ms (5)
+May 30 02:35:17 symfony [info] {sfWebDebugLogger} Factories 34.06 ms (1)
+May 30 02:35:22 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+May 30 02:35:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 02:35:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 02:35:22 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 02:35:22 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 30 02:35:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2016-05-30 02:35:22'
+May 30 02:35:22 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 30 02:35:22 symfony [notice] {sfWebDebugLogger}  Notice at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 5 (Undefined variable: JobeetJobs)
+May 30 02:35:22 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 5 (Invalid argument supplied for foreach())
+May 30 02:35:22 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:35:22 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:35:22 symfony [info] {main} Get slot "title"
+May 30 02:35:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 02:35:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:35:22 symfony [info] {sfWebDebugLogger} Configuration 9.93 ms (9)
+May 30 02:35:22 symfony [info] {sfWebDebugLogger} Factories 25.86 ms (1)
+May 30 02:35:22 symfony [info] {sfWebDebugLogger} Action "job/index" 17.69 ms (1)
+May 30 02:35:22 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 8.78 ms (1)
+May 30 02:35:22 symfony [info] {sfWebResponse} Send content (43187 o)
+May 30 02:35:22 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 30 02:35:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 30 02:35:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:35:22 symfony [info] {sfWebDebugLogger} Configuration 7.66 ms (5)
+May 30 02:35:22 symfony [info] {sfWebDebugLogger} Factories 37.98 ms (1)
+May 30 02:35:23 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+May 30 02:35:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 02:35:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 02:35:23 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 02:35:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 30 02:35:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2016-05-30 02:35:23'
+May 30 02:35:23 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 30 02:35:23 symfony [notice] {sfWebDebugLogger}  Notice at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 5 (Undefined variable: JobeetJobs)
+May 30 02:35:23 symfony [warning] {sfWebDebugLogger}  Warning at C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules\job\templates\indexSuccess.php on line 5 (Invalid argument supplied for foreach())
+May 30 02:35:23 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:35:23 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:35:23 symfony [info] {main} Get slot "title"
+May 30 02:35:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 02:35:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:35:23 symfony [info] {sfWebDebugLogger} Configuration 9.54 ms (9)
+May 30 02:35:23 symfony [info] {sfWebDebugLogger} Factories 25.25 ms (1)
+May 30 02:35:23 symfony [info] {sfWebDebugLogger} Action "job/index" 16.83 ms (1)
+May 30 02:35:23 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 9.48 ms (1)
+May 30 02:35:23 symfony [info] {sfWebResponse} Send content (43189 o)
+May 30 02:35:24 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 30 02:35:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 30 02:35:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:35:24 symfony [info] {sfWebDebugLogger} Configuration 6.08 ms (5)
+May 30 02:35:24 symfony [info] {sfWebDebugLogger} Factories 34.00 ms (1)
+May 30 02:36:18 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+May 30 02:36:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 30 02:36:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 30 02:36:18 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+May 30 02:36:18 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.3 MB | mempeak:    3.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+May 30 02:36:18 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2016-05-30 02:36:18'
+May 30 02:36:18 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+May 30 02:36:18 symfony [info] {sfPHPView} Decorate content with "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:36:18 symfony [info] {sfPHPView} Render "C:\Users\Zully\www\symfony\jobeet\apps\frontend\templates/layout.php"
+May 30 02:36:18 symfony [info] {main} Get slot "title"
+May 30 02:36:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 30 02:36:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:36:18 symfony [info] {sfWebDebugLogger} Configuration 9.60 ms (9)
+May 30 02:36:18 symfony [info] {sfWebDebugLogger} Factories 24.48 ms (1)
+May 30 02:36:18 symfony [info] {sfWebDebugLogger} Action "job/index" 16.46 ms (1)
+May 30 02:36:18 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 10.73 ms (1)
+May 30 02:36:18 symfony [info] {sfWebResponse} Send content (43024 o)
+May 30 02:36:18 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/logo.png" (/).
+May 30 02:36:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 30 02:36:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 30 02:36:18 symfony [info] {sfWebDebugLogger} Configuration 5.89 ms (5)
+May 30 02:36:18 symfony [info] {sfWebDebugLogger} Factories 32.01 ms (1)
